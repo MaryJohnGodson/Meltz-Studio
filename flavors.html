@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Flavors | Ice Cream Meltz</title>
+    <meta name="description" content="Explore our premium artisan ice cream flavors. From classic Vanilla to exquisite White Chocolate Maltova Crumble.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Ice Cream Meltz Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="flavors.html">Flavors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shakes.html">Thick Shakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="flavors.html" class="btn btn-primary-custom">Order Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding" style="margin-top: 80px; background: linear-gradient(135deg, var(--bg-cream), rgba(0, 213, 230, 0.1));">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3" data-aos="fade-down">Artisan Flavors</h1>
+            <p class="lead mx-auto" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">
+                Discover our meticulously crafted gelato menu. Made fresh daily with the finest ingredients.
+            </p>
+        </div>
+    </header>
+
+    <!-- Pricing Info -->
+    <div class="container mt-5 mb-3 text-center" data-aos="fade-up">
+        <div class="glass-card d-inline-block p-3">
+            <h5 class="brand-font mb-0">Pricing Options</h5>
+            <div class="d-flex justify-content-center gap-4 mt-2 font-weight-bold">
+                <span class="badge" style="background: var(--primary-pink); font-size: 0.9rem;">Single Scoop - Rs.99</span>
+                <span class="badge" style="background: var(--primary-cyan); font-size: 0.9rem;">Double Scoop - Rs.180</span>
+                <span class="badge" style="background: var(--accent-gold); color: var(--text-chocolate); font-size: 0.9rem;">Triple Scoop - Rs.260</span>
+            </div>
+        </div>
+    </div>
+<!-- Fruit & Premium Flavors -->
+<section class="section-padding pt-4">
+    <div class="container">
+
+        <div class="section-title mb-5" data-aos="fade-right">
+            <h2 style="font-size: 2.5rem;">Fruit & Premium Flavors</h2>
+            <div class="mt-2" style="width: 50px; height: 3px; background: var(--primary-pink);"></div>
+        </div>
+
+        <div class="row">
+
+            <script>
+            const premiumFlavors = [
+                {
+                    name: "Raspberry Sorbet",
+                    desc: "Tangy and refreshing, bursting with real raspberries.",
+                    img: "images/flavors/rasp.png"
+                },
+                {
+                    name: "Strawberry Cheese Cake",
+                    desc: "Creamy cheesecake swirled with fresh strawberry compote.",
+                    img: "images/flavors/strache.png"
+                },
+                {
+                    name: "Strawberry Yogurt",
+                    desc: "A healthy, creamy treat with real strawberry chunks.",
+                    img: "images/flavors/strayog.png"
+                },
+                {
+                    name: "Blueberry Pie Ice Cream",
+                    desc: "Blueberry ribbon with real pie crust crumbles.",
+                    img: "images/flavors/blu.png"
+                },
+                {
+                    name: "White Choc Maltova Crumble",
+                    desc: "White chocolate base with rich maltova crumbles.",
+                    img: "images/flavors/white.png"
+                },
+                {
+                    name: "Nutella Ice Cream",
+                    desc: "The hazelnut-chocolate classic in creamy gelato form.",
+                    img: "images/flavors/nut.png"
+                },
+                {
+                    name: "Dark Chocolate Ice Cream",
+                    desc: "Intensely rich, crafted with premium dark cocoa.",
+                    img: "images/flavors/dark.png"
+                },
+                {
+                    name: "Chocolate Ice Cream",
+                    desc: "Smooth and classic milk chocolate perfection.",
+                    img: "images/flavors/choco.png"
+                },
+                {
+                    name: "Milk Chocolate Chip Almond",
+                    desc: "Rich chocolate with roasted almonds and chocolate chips.",
+                    img: "images/flavors/alm.png"
+                },
+                {
+                    name: "Milk Maid Ice Cream",
+                    desc: "A rich, condensed milk inspired creamy delight.",
+                    img: "images/flavors/maid.png"
+                }
+            ];
+
+            premiumFlavors.forEach((flavor, index) => {
+                const delay = (index % 3) * 100;
+
+                document.write(`
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${delay}">
+                    <div class="glass-card product-card h-100">
+
+                        <img 
+                            src="${flavor.img}" 
+                            alt="${flavor.name}" 
+                            class="product-img rounded-circle shadow-sm"
+                        >
+
+                        <h4>${flavor.name}</h4>
+
+                        <p>${flavor.desc}</p>
+
+                        <ul class="price-list">
+                            <li><span>Single Scoop</span> <span>Rs.99</span></li>
+                            <li><span>Double Scoop</span> <span>Rs.180</span></li>
+                            <li><span>Triple Scoop</span> <span>Rs.260</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+                `);
+            });
+            </script>
+
+        </div>
+    </div>
+</section>
+
+<!-- Classic Flavors -->
+<section class="section-padding pt-4" style="background-color: var(--white);">
+
+    <div class="container">
+
+        <div class="section-title mb-5" data-aos="fade-right">
+            <h2 style="font-size: 2.5rem;">Classic Flavors</h2>
+            <div class="mt-2" style="width: 50px; height: 3px; background: var(--primary-cyan);"></div>
+        </div>
+
+        <div class="row">
+
+            <script>
+            const classicFlavors = [
+                {
+                    name: "Vanilla Ice Cream",
+                    desc: "Classic pure vanilla bean essence.",
+                    image: "images/flavors/van.png"
+                },
+                {
+                    name: "Oreo Cookies Ice Cream",
+                    desc: "Creamy base packed with real Oreo cookie chunks.",
+                    image: "images/flavors/oreo.png"
+                },
+                {
+                    name: "Brownie Ice Cream",
+                    desc: "Fudgy brownie pieces mixed into a rich chocolate base.",
+                    image: "images/flavors/brown.png"
+                },
+                {
+                    name: "Lotus Biscoff Ice Cream",
+                    desc: "Infused with the distinct caramelized biscuit flavor.",
+                    image: "images/flavors/lotu.png"
+                },
+                {
+                    name: "Filter Coffee Ice Cream",
+                    desc: "Authentic South Indian filter coffee in a scoop.",
+                    image: "images/flavors/filt.png"
+                },
+                {
+                    name: "Mango Ice Cream",
+                    desc: "Sweet and tropical, made with real Alphonso mangoes.",
+                    image: "images/flavors/mang.png"
+                },
+                {
+                    name: "Milo Ice Cream",
+                    desc: "The malty, chocolatey goodness of childhood.",
+                    image: "images/flavors/milo.png"
+                },
+                {
+                    name: "Pista Ice Cream",
+                    desc: "Rich and nutty with roasted pistachio pieces.",
+                    image: "images/flavors/pista.png"
+                },
+                {
+                    name: "Water Melon Sorbet",
+                    desc: "A refreshing dairy-free summer delight.",
+                    image: "images/flavors/wat.png"
+                },
+                {
+                    name: "Salted Butter Scotch",
+                    desc: "Sweet buttery base with a hint of sea salt and praline.",
+                    image: "images/flavors/salt.png"
+                },
+                {
+                    name: "Cookie Dough Ice Cream",
+                    desc: "Vanilla base loaded with chocolate chip cookie dough bites.",
+                    image: "images/flavors/cooki.png"
+                }
+            ];
+
+            classicFlavors.forEach((flavor, index) => {
+                const delay = (index % 3) * 100;
+
+                document.write(`
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${delay}">
+                    <div class="glass-card product-card h-100">
+
+                        <img 
+                            src="${flavor.image}" 
+                            alt="${flavor.name}" 
+                            class="product-img rounded-circle shadow-sm"
+                        >
+
+                        <h4>${flavor.name}</h4>
+
+                        <p>${flavor.desc}</p>
+
+                        <ul class="price-list">
+                            <li><span>Single Scoop</span> <span>Rs.99</span></li>
+                            <li><span>Double Scoop</span> <span>Rs.180</span></li>
+                            <li><span>Triple Scoop</span> <span>Rs.260</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+                `);
+            });
+            </script>
+
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="images/logo.png" alt="Ice Cream Meltz" class="img-fluid mb-3" style="max-height: 80px; background: rgba(255,255,255,0.8); padding: 10px; border-radius: 10px;">
+                    <p class="text-muted" style="color: #ccc !important;">Premium artisan ice cream & gelato brand offering handcrafted happiness in every scoop.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="flavors.html">Flavors</a></li>
+                        <li><a href="shakes.html">Thick Shakes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-links">
+                        <li style="color: var(--bg-cream);"><i class="fas fa-map-marker-alt me-2"></i> 123 Gelato Street, Dessert City</li>
+                        <li style="color: var(--bg-cream);"><i class="fas fa-phone-alt me-2"></i> +1 234 567 8900</li>
+                        <li style="color: var(--bg-cream);"><i class="fas fa-envelope me-2"></i> hello@icecreammeltz.com</li>
+                        <li style="color: var(--bg-cream); mt-3"><i class="fas fa-clock me-2"></i> Mon-Sun: 11AM - 11PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Newsletter</h5>
+                    <p class="text-muted" style="color: #ccc !important;">Subscribe to get updates on new flavors and special offers.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email Address" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white;">
+                            <button class="btn btn-primary-custom" type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+                <div class="col-12 text-center">
+                    <p class="mb-0" style="color: #888;">&copy; 2026 Ice Cream Meltz. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp/Order Button -->
+    <a href="contact.html" class="btn btn-primary-custom rounded-circle floating-order" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 24px; box-shadow: 0 10px 20px rgba(255, 79, 163, 0.5);">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Meltz | Handcrafted Happiness in Every Scoop</title>
+    <meta name="description" content="Premium artisan ice cream & gelato brand offering freshly manufactured artisan ice cream crafted with premium gelato technology.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Ice Cream Meltz Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flavors.html">Flavors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shakes.html">Thick Shakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="flavors.html" class="btn btn-primary-custom">Order Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <!-- Video Background Placeholder -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="videos/hero-video.mp4" type="video/mp4">
+            <!-- Fallback text -->
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="container position-relative z-1">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7 text-center text-lg-start" data-aos="fade-up">
+                    <h1 class="display-3 fw-bold mb-4">Handcrafted Happiness in Every Scoop</h1>
+                    <p class="lead mb-5" style="color: var(--text-chocolate); font-weight: 500;">
+                        Freshly manufactured artisan ice cream crafted with premium gelato technology.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <a href="flavors.html" class="btn btn-primary-custom btn-lg">Explore Flavors</a>
+                        <a href="contact.html" class="btn btn-outline-custom btn-lg">Visit Store</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block text-center" data-aos="fade-left" data-aos-delay="200">
+                    <!-- Floating Ice Cream Graphic Placeholder -->
+                    <img src="images/hero/ice.png" alt="Ice Cream" class="img-fluid rounded-circle floating-element" style="border: 10px solid rgba(255,255,255,0.5); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section-padding bg-cream" id="about-preview">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="glass-card p-4 text-center">
+                        <img src="images/backgrounds/geleto.png" alt="Making Gelato" class="img-fluid rounded" style="width: 100%; height: 500px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <h4 class="brand-font mb-2">Our Gelato Craft</h4>
+                    <h2 class="mb-4">Mastering the Art of Premium Desserts</h2>
+                    <p class="mb-4 text-muted">We manufacture our own premium ice cream using advanced gelato machines to create richer texture, smoother taste, and unforgettable flavors. Every scoop tells a story of passion, quality, and luxury.</p>
+                    <a href="about.html" class="btn btn-outline-custom">Read Our Story <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Flavors Section -->
+    <section class="section-padding" style="background: linear-gradient(135deg, var(--bg-cream), rgba(255, 79, 163, 0.1));" id="featured-flavors">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">  
+                
+                <p>Taste the Magic</p>
+                <h2>Featured Flavors</h2>
+                <div class="mt-3 mx-auto" style="width: 50px; height: 3px; background: var(--primary-cyan);"></div>
+            </div>
+            
+            <div class="swiper-container-wrapper position-relative" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper flavors-swiper px-4 py-2">
+                    <div class="swiper-wrapper">
+                        <!-- Flavor 1: Raspberry Sorbet -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=raspberry-sorbet" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/rasp.png" alt="Raspberry Sorbet" class="product-img rounded-circle shadow-sm">
+                                <h4>Raspberry Sorbet</h4>
+                                <p>Tangy and refreshing, bursting with real raspberries.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 2: Strawberry Cheese Cake -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=strawberry-cheese-cake" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/strache.png" alt="Strawberry Cheese Cake" class="product-img rounded-circle shadow-sm">
+                                <h4>Strawberry Cheese Cake</h4>
+                                <p>Creamy cheesecake base swirled with fresh strawberry compote.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 3: Strawberry Yogurt -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=strawberry-yogurt" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/strayog.png" alt="Strawberry Yogurt" class="product-img rounded-circle shadow-sm">
+                                <h4>Strawberry Yogurt</h4>
+                                <p>A healthy, creamy treat with real strawberry chunks.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 4: Blueberry Pie Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=blueberry-pie-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/blu.png" alt="Blueberry Pie Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Blueberry Pie Ice Cream</h4>
+                                <p>Blueberry ribbon with real pie crust crumbles.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 5: White Choc Maltova Crumble -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=white-choc-maltova-crumble" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/white.png" alt="White Choc Maltova Crumble" class="product-img rounded-circle shadow-sm">
+                                <h4>White Choc Maltova Crumble</h4>
+                                <p>White chocolate base with rich maltova crumbles.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 6: Nutella Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=nutella-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/nut.png" alt="Nutella Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Nutella Ice Cream</h4>
+                                <p>The hazelnut-chocolate classic in creamy gelato form.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 7: Dark Chocolate Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=dark-chocolate-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/dark.png" alt="Dark Chocolate Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Dark Chocolate Ice Cream</h4>
+                                <p>Intensely rich, crafted with premium dark cocoa.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 8: Chocolate Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=chocolate-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/choco.png" alt="Chocolate Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Chocolate Ice Cream</h4>
+                                <p>Smooth and classic milk chocolate perfection.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 9: Milk Chocolate Chip Almond -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=milk-chocolate-chip-almond" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/alm.png" alt="Milk Chocolate Chip Almond" class="product-img rounded-circle shadow-sm">
+                                <h4>Milk Chocolate Chip Almond</h4>
+                                <p>Rich chocolate with roasted almonds and chocolate chips.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 10: Milk Maid Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=milk-maid-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/maid.png" alt="Milk Maid Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Milk Maid Ice Cream</h4>
+                                <p>A rich, condensed milk inspired creamy delight.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 11: Vanilla Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=vanilla-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/van.png" alt="Vanilla Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Vanilla Ice Cream</h4>
+                                <p>Classic pure vanilla bean essence.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 12: Oreo Cookies Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=oreo-cookies-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/oreo.png" alt="Oreo Cookies Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Oreo Cookies Ice Cream</h4>
+                                <p>Creamy base packed with real Oreo cookie chunks.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 13: Brownie Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=brownie-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/brown.png" alt="Brownie Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Brownie Ice Cream</h4>
+                                <p>Fudgy brownie pieces mixed into a rich chocolate base.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 14: Lotus Biscoff Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=lotus-biscoff-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/lotu.png" alt="Lotus Biscoff Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Lotus Biscoff Ice Cream</h4>
+                                <p>Infused with the distinct caramelized biscuit flavor.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 15: Filter Coffee Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=filter-coffee-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/filt.png" alt="Filter Coffee Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Filter Coffee Ice Cream</h4>
+                                <p>Authentic South Indian filter coffee in a scoop.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 16: Mango Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=mango-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/mang.png" alt="Mango Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Mango Ice Cream</h4>
+                                <p>Sweet and tropical, made with real Alphonso mangoes.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 17: Milo Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=milo-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/milo.png" alt="Milo Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Milo Ice Cream</h4>
+                                <p>The malty, chocolatey goodness of childhood.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 18: Pista Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=pista-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/pista.png" alt="Pista Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Pista Ice Cream</h4>
+                                <p>Rich and nutty with roasted pistachio pieces.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 19: Water Melon Sorbet -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=water-melon-sorbet" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/wat.png" alt="Water Melon Sorbet" class="product-img rounded-circle shadow-sm">
+                                <h4>Water Melon Sorbet</h4>
+                                <p>A refreshing dairy-free summer delight.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 20: Salted Butter Scotch -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=salted-butter-scotch" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/salt.png" alt="Salted Butter Scotch" class="product-img rounded-circle shadow-sm">
+                                <h4>Salted Butter Scotch</h4>
+                                <p>Sweet buttery base with a hint of sea salt and praline.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                        <!-- Flavor 21: Cookie Dough Ice Cream -->
+                        <div class="swiper-slide py-3">
+                            <a href="flavors.html?flavor=cookie-dough-ice-cream" class="glass-card product-card h-100 mb-0 d-flex flex-column align-items-center text-decoration-none">
+                                <img src="images/flavors/cooki.png" alt="Cookie Dough Ice Cream" class="product-img rounded-circle shadow-sm">
+                                <h4>Cookie Dough Ice Cream</h4>
+                                <p>Vanilla base loaded with chocolate chip cookie dough bites.</p>
+                                <span class="btn btn-sm btn-outline-custom mt-2">View Details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Custom Navigation Buttons -->
+                <div class="swiper-button-prev-custom">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="swiper-button-next-custom">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <!-- Custom Pagination Bullets -->
+                <div class="swiper-pagination-custom"></div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="flavors.html" class="btn btn-primary-custom">View All Flavors</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding position-relative" style="background-color: var(--white);" id="why-choose-us">
+        <!-- Floating particles background (simplified with CSS pattern or small divs in a real app, here we use simple text icons for effect) -->
+        <div class="position-absolute w-100 h-100 top-0 left-0 overflow-hidden" style="pointer-events: none; opacity: 0.05;">
+            <i class="fas fa-ice-cream fa-3x" style="position: absolute; top: 10%; left: 10%; transform: rotate(15deg);"></i>
+            <i class="fas fa-star fa-2x" style="position: absolute; top: 20%; right: 15%; transform: rotate(-10deg);"></i>
+            <i class="fas fa-leaf fa-3x" style="position: absolute; bottom: 15%; left: 20%; transform: rotate(45deg);"></i>
+            <i class="fas fa-heart fa-2x" style="position: absolute; bottom: 25%; right: 10%; transform: rotate(-25deg);"></i>
+        </div>
+        
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <p>The Meltz Difference</p>
+                <h2>Why Choose Us</h2>
+                <div class="mt-3 mx-auto" style="width: 50px; height: 3px; background: var(--primary-pink);"></div>
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="p-4 glass-card h-100">
+                        <div class="mb-3" style="color: var(--primary-pink); font-size: 2.5rem;">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h5 class="fw-bold">Freshly Made</h5>
+                        <p class="small text-muted mb-0">Crafted daily in small batches.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="p-4 glass-card h-100">
+                        <div class="mb-3" style="color: var(--primary-cyan); font-size: 2.5rem;">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h5 class="fw-bold">Gelato Machine Crafted</h5>
+                        <p class="small text-muted mb-0">Advanced tech for smoother texture.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="p-4 glass-card h-100">
+                        <div class="mb-3" style="color: var(--accent-gold); font-size: 2.5rem;">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="fw-bold">Premium Ingredients</h5>
+                        <p class="small text-muted mb-0">Sourced globally for best taste.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="p-4 glass-card h-100">
+                        <div class="mb-3" style="color: var(--text-chocolate); font-size: 2.5rem;">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h5 class="fw-bold">Luxury Taste</h5>
+                        <p class="small text-muted mb-0">An artisan experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thick Shakes Preview -->
+    <section class="section-padding text-white" style="background: linear-gradient(135deg, var(--text-chocolate), #2A1A0F);" id="shakes-preview">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left">
+                    <div class="position-relative">
+                        <!-- Chocolate drip separator effect via top border or image, simulated here -->
+                        <div style="position: absolute; top: -30px; left: 0; width: 100%; height: 20px; background: url('data:image/svg+xml;utf8,<svg viewBox=\"0 0 100 10\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0 Q 5 10 10 0 T 20 0 T 30 0 T 40 0 T 50 0 T 60 0 T 70 0 T 80 0 T 90 0 T 100 0 L 100 10 L 0 10 Z\" fill=\"%235C3A21\"/></svg></div>
+                        
+                        <img src="images/shakes/thick.png" alt="Thick Shakes" class="img-fluid rounded shadow-lg floating-element" style="border: 5px solid var(--accent-gold);">
+                    </div>
+                </div>
+                <div class="col-lg-7 order-lg-1 pe-lg-5" data-aos="fade-right">
+                    <h4 class="brand-font mb-2" style="color: var(--accent-gold);">Indulge Yourself</h4>
+                    <h2 class="mb-4" style="color: var(--white);">Premium Thick Shakes</h2>
+                    <p class="mb-4" style="color: #ddd;">Not just a drink, but a dessert in a glass. Our thick shakes are blended to perfection, offering a rich, creamy, and luxurious experience in every sip. From Classic Vanilla to decadent Nutella.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--primary-cyan);"></i> Extra Thick Consistency</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--primary-cyan);"></i> Made with Pure Gelato</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--primary-cyan);"></i> Generous Toppings</li>
+                    </ul>
+                    <a href="shakes.html" class="btn btn-outline-custom" style="border-color: var(--accent-gold); color: var(--accent-gold);">Explore Shakes <i class="fas fa-glass-martini-alt ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="images/logo.png" alt="Ice Cream Meltz" class="img-fluid mb-3" style="max-height: 80px; background: rgba(255,255,255,0.8); padding: 10px; border-radius: 10px;">
+                    <p class="text-muted" style="color: #ccc !important;">Premium artisan ice cream & gelato brand offering handcrafted happiness in every scoop.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="flavors.html">Flavors</a></li>
+                        <li><a href="shakes.html">Thick Shakes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-links">
+                        <li style="color: var(--bg-cream);"><i class="fas fa-map-marker-alt me-2"></i> 123 Gelato Street, Dessert City</li>
+                        <li style="color: var(--bg-cream);"><i class="fas fa-phone-alt me-2"></i> +1 234 567 8900</li>
+                        <li style="color: var(--bg-cream);"><i class="fas fa-envelope me-2"></i> hello@icecreammeltz.com</li>
+                        <li style="color: var(--bg-cream); mt-3"><i class="fas fa-clock me-2"></i> Mon-Sun: 11AM - 11PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Newsletter</h5>
+                    <p class="text-muted" style="color: #ccc !important;">Subscribe to get updates on new flavors and special offers.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email Address" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white;">
+                            <button class="btn btn-primary-custom" type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+                <div class="col-12 text-center">
+                    <p class="mb-0" style="color: #888;">&copy; 2026 Ice Cream Meltz. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp/Order Button -->
+    <a href="contact.html" class="btn btn-primary-custom rounded-circle floating-order" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 24px; box-shadow: 0 10px 20px rgba(255, 79, 163, 0.5);">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
